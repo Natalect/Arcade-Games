@@ -49,3 +49,7 @@ function launchSpaceInvaders() {
 function launchTetris() {
   window.location = "./Tetris/index.html";
 }
+
+function launchGravity() {
+  window.location = "./Google-Space.html";
+}
