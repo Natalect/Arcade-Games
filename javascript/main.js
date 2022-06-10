@@ -58,6 +58,6 @@ function launchGravity() {
   window.location = "./Google-Gravity.html";
 }
 
-function launchWaveform() {
-  window.location = "./Waveform.html";
+function launchWaveform() {  
+  window.location = "./waveform.html";
 }
