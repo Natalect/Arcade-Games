@@ -50,6 +50,10 @@ function launchTetris() {
   window.location = "./Tetris/index.html";
 }
 
-function launchGravity() {
+function launchSpace() {
   window.location = "./Google-Space.html";
+}
+
+function launchGravity() {
+  window.location = "./Google-Gravity.html";
 }
