@@ -1,12 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.darkmode {
+  background-color: red;
 }
 
 .games_catagory {
@@ -45,4 +45,8 @@ h2 {
 
 .h2top {
   margin-top: 100px;
+}
+
+#Dark-Mode-Toogle {
+  cursor: pointer;
 }

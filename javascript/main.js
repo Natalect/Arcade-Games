@@ -1,3 +1,33 @@
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+var navbar = document.getElementById("navbar");
+
+const enableDarkMode = () => {
+  document.body.classList.add("darkmode");
+  localStorage.setItem("darkMode", "enabled");
+  navbar.style.backgroundColor = "blue";
+};
+
+const disableDarkMode = () => {
+  document.body.classList.remove("darkmode");
+  localStorage.setItem("darkMode", "disabled");
+  navbar.style.backgroundColor = "red";
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+
+// Launch Games
 function launchAsteroids() {
   window.location = "./Asteroids/index.html";
 }
@@ -58,6 +88,6 @@ function launchGravity() {
   window.location = "./Google-Gravity.html";
 }
 
-function launchWaveform() {  
+function launchWaveform() {
   window.location = "./waveform.html";
 }

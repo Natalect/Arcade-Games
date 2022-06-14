@@ -12,7 +12,10 @@
     <title>Fyːʁɐ</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <nav
+      id="navbar"
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">Fyːʁɐ</a>
         <button
@@ -52,7 +55,9 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#endless">Endless</a></li>
-                <li><a class="dropdown-item" href="#web_exp">Web Experiments</a></li>
+                <li>
+                  <a class="dropdown-item" href="#web_exp">Web Experiments</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="./index.html"
@@ -60,6 +65,9 @@
                   >
                 </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Dark-Mode-Toogle">Dark Mode</a>
             </li>
           </ul>
         </div>
@@ -199,35 +207,37 @@
           </div>
         </div>
         <div class="card" style="width: 18rem" onclick="launchMinesweeper()">
-            <img src="./Images/Minesweeper.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Minesweeper</h5>
-              <p class="card-text">
-                Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them.
-              </p>
-            </div>
+          <img src="./Images/Minesweeper.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Minesweeper</h5>
+            <p class="card-text">
+              Minesweeper is a single-player puzzle video game. The objective of
+              the game is to clear a rectangular board containing hidden "mines"
+              or bombs without detonating any of them.
+            </p>
           </div>
-          <div class="card" style="width: 18rem" onclick="launchPong()">
-            <img src="./Images/Pong.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Pong</h5>
-              <p class="card-text">
-                Pong is a table tennis–themed twitch arcade sports video game,
-                featuring simple two-dimensional graphics, manufactured by Atari
-                and originally released in 1972.
-              </p>
-            </div>
+        </div>
+        <div class="card" style="width: 18rem" onclick="launchPong()">
+          <img src="./Images/Pong.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Pong</h5>
+            <p class="card-text">
+              Pong is a table tennis–themed twitch arcade sports video game,
+              featuring simple two-dimensional graphics, manufactured by Atari
+              and originally released in 1972.
+            </p>
           </div>
-          <div class="card" style="width: 18rem" onclick="launchSnake()">
-            <img src="./Images/Snake.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Snake</h5>
-              <p class="card-text">
-                Snake is a video game genre where the player maneuvers a growing
-                line that becomes a primary obstacle to itself.
-              </p>
-            </div>
+        </div>
+        <div class="card" style="width: 18rem" onclick="launchSnake()">
+          <img src="./Images/Snake.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Snake</h5>
+            <p class="card-text">
+              Snake is a video game genre where the player maneuvers a growing
+              line that becomes a primary obstacle to itself.
+            </p>
           </div>
+        </div>
         <div class="card" style="width: 18rem" onclick="launchPong()">
           <img src="./Images/Pong.png" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -278,21 +288,29 @@
       <div class="games_catagory" id="endless">
         <h2>Endless</h2>
         <div class="cards_list">
-            <div class="most_popular">
-                <div class="card" style="width: 18rem" onclick="launchAsteroids()">
-                  <img src="./Images/Asteroids.png" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Asteroids</h5>
-                    <p class="card-text">
-                      Asteroids is a space-themed multidirectional shooter arcade game
-                      designed by Lyle Rains and Ed Logg released in November 1979 by
-                      Atari, Inc.
-                    </p>
-                  </div>
-                </div>
+          <div class="most_popular">
+            <div class="card" style="width: 18rem" onclick="launchAsteroids()">
+              <img
+                src="./Images/Asteroids.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Asteroids</h5>
+                <p class="card-text">
+                  Asteroids is a space-themed multidirectional shooter arcade
+                  game designed by Lyle Rains and Ed Logg released in November
+                  1979 by Atari, Inc.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="card" style="width: 18rem" onclick="launchFlappyBird()">
-            <img src="./Images/Flappy-Bird.png" class="card-img-top" alt="..." />
+            <img
+              src="./Images/Flappy-Bird.png"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Flappy Bird</h5>
               <p class="card-text">
@@ -303,13 +321,18 @@
             </div>
           </div>
           <div class="card" style="width: 18rem" onclick="launchFruitNinja()">
-            <img src="./Images/Fruit-Ninja.png" class="card-img-top" alt="..." />
+            <img
+              src="./Images/Fruit-Ninja.png"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Fruit Ninja</h5>
               <p class="card-text">
                 Fruit Ninja is a video game developed by Halfbrick. It was
                 released April 21, 2010 for iPod Touch and iPhone devices, July
-                12, 2010 for the iPad, September 17, 2010 for Android OS devices.
+                12, 2010 for the iPad, September 17, 2010 for Android OS
+                devices.
               </p>
             </div>
           </div>
@@ -335,37 +358,31 @@
             </div>
           </div>
         </div>
-      <div class="games_catagory" id="web_exp">
-        <h2>Web Experiments</h2>
-        <div class="cards_list">
-          <div class="card" style="width: 18rem" onclick="launchSpace()">
-            <img src="./Images/Google-Space.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Google Space</h5>
-              <p class="card-text">
-                Google, but without gravity.
-
-              </p>
+        <div class="games_catagory" id="web_exp">
+          <h2>Web Experiments</h2>
+          <div class="cards_list">
+            <div class="card" style="width: 18rem" onclick="launchSpace()">
+              <img
+                src="./Images/Google-Space.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google Space</h5>
+                <p class="card-text">Google, but without gravity.</p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem" onclick="launchGravity()">
-            <img src="./Images/Google-Gravity.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Google Gravity</h5>
-              <p class="card-text">
-                Google, but with gravity.
-              </p>
+            <div class="card" style="width: 18rem" onclick="launchGravity()">
+              <img
+                src="./Images/Google-Gravity.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google Gravity</h5>
+                <p class="card-text">Google, but with gravity.</p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem" onclick="launchWaveform()">
-            <img src="./Images/Google-Space.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">3D Waveform</h5>
-              <p class="card-text">
-                3D waveform simulation.
-              </p>
-            </div>
-          </div>
           </div>
         </div>
       </div>
